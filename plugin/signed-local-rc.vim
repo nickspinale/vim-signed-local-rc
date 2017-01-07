@@ -9,7 +9,7 @@ endif
 
 python << EOF
 import vim
-import sys, os, os.path
+import sys, os.path
 this = vim.eval('expand("<sfile>")')
 lib = os.path.join(os.path.dirname(this), '..', 'python')
 sys.path.append(lib)
